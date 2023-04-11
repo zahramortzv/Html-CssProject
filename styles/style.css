@@ -290,6 +290,85 @@ header{
     cursor: pointer;
 }
 
+.online-payment{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.online-payment img{
+    width: 450px;
+    height: 480px;
+}
+
+.section-text{
+    margin: 30px 0;
+    width: 530px;
+}
+
+.section-text h2{
+    color: #747480;
+    font-family: 'YekanBakhMedium';
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 20px 0 5px;
+}
+
+.section-text h3{
+    color: #303030;
+    font-family: 'YekanBakhHeavy';
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 5px 0 10px;
+}
+
+.section-text p{
+    color: #303030;
+    font-family: 'YekanBakhMedium';
+    text-align: justify;
+    line-height: 40px;
+    border-bottom: 1px solid #dfe1e4;
+    padding-bottom: 20px;
+    margin-top: 16px;
+}
+
+.section-links{
+    margin-top: 40px;
+    display: flex;
+}
+
+.section-links .first-button{
+    font-size: 0.9rem;
+    font-family: 'iranyekanwebmedium';
+    color: #000;
+    background: #ffd900;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.section-links .second-button{
+    display: block;
+    font-size: 0.9rem;
+    font-family: 'iranyekanwebmedium';
+    color: #28457b;
+    background: rgba(232, 239, 254, 0.7);
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.section-links .second-button img{
+    width: 18px;
+    height: 15px;
+    margin-right: 5px;
+}
 
 /* .blue-header .wave {
     width: 846px;
@@ -319,6 +398,9 @@ header{
     }
     .banner-image img{
         width: 430px;
+    }
+    .online-payment{
+        width: 940px;
     }
 }
 
@@ -363,6 +445,14 @@ header{
         margin-top: 40px;
         font-size: 1rem;
     }
+    .online-payment{
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-text{
+        width: 95%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -380,9 +470,18 @@ header{
         margin-left: 8px;
         margin-right: 8px;
     }
+    .section-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .online-payment{
+        width: 460px;
+        height: 480px;
+    }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 575px) {
     .banner{
         padding: 80px 40px;
     }
@@ -393,5 +492,14 @@ header{
     .banner-text p{
         text-align: justify;
     }
-
+    .online-payment .section-image{
+        display: none;
+    }
+    .section-text{
+        width: 80%;
+        padding: 0 10pxW;
+    }
+    .section-text h3{
+        font-size: 1.5rem;
+    }
 }
