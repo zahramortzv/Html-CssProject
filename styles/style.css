@@ -529,6 +529,73 @@ header{
     margin-right: 10px;
 }
 
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: auto;
+}
+
+footer .footer-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: calc(100% - 330px);
+    margin-bottom: 50px;
+    padding: 0 10px;
+}
+
+.footer-links p{
+    font-family: 'YekanBakhHeavy';
+    font-size: 1.3rem;
+    margin-top: 15px;
+    color: #303030;
+}
+
+.footer-links ul{
+    list-style: none;
+}
+
+.footer-links a{
+    font-family: 'YekanBakhMedium';
+    text-decoration: none;
+    font-size: 1rem;
+    columns: #000;
+}
+
+.footer-links ul li{
+    padding: 8px 10px;
+}
+
+.social-media{
+    width: 330px;
+    padding: 0 30px;
+    margin-bottom: 100px;
+}
+
+.social-media p{
+    font-family: 'YekanBakhHeavy';
+    font-size: 1.3rem;
+    color: #303030;
+}
+
+.social-media div{
+    display: flex;
+    margin-top: 20px;
+}
+
+.social-media a{
+    background-color: #eff4fe;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 15px;
+
+}
+
+
 /* .blue-header .wave {
     width: 846px;
     height: 509px;
