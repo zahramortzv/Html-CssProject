@@ -592,9 +592,23 @@ footer .footer-links{
     align-items: center;
     border-radius: 10px;
     margin-left: 15px;
-
 }
 
+.bell{
+    position: fixed;
+    background-color: #2e82ff;
+    border-radius: 50%;
+    width: fit-content;
+    padding: 7px 7px;
+    bottom: 20px;
+    left: 20px;
+}
+
+.bell img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
 
 /* .blue-header .wave {
     width: 846px;
@@ -657,6 +671,14 @@ footer .footer-links{
     }
     .support{
         width: 880px;
+    }
+
+    .support-request, .support-number{
+        font-size: 1.1rem;
+   }
+
+    footer{
+        width: 940px;
     }
 }
 
@@ -726,6 +748,16 @@ footer .footer-links{
         border-radius: 35px;
         margin-top: 20px;
     }
+    footer{
+        flex-direction: column;
+        width: calc(100% - 60px);
+    }
+    footer .footer-links{
+        width: 100%;
+    }
+    footer .social-media{
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -739,84 +771,117 @@ footer .footer-links{
     .hamburger-icon{
         display: block;
     }
+
     .banner{
         margin-left: 8px;
         margin-right: 8px;
     }
+    
     .section-text{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .online-payment{
         width: 80%;
         margin: auto;
     }
+
     .difination{
         text-align: center;
         margin-top: 90px;
     }
+
     .difination h3{
         font-size: 1.6rem;
     }
+
     .items{
         width: 100%;
         padding: 50px 0;
     }
+
     .items .item{
         padding: 18px 0 20px 20px;
     }
+
     .start-box{
         width: calc(100% - 16px);
         margin: 0 8px;
     }
 
+    footer .footer-links{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .footer-links div{
+        margin-top: 25px;
+    }
+
+    footer {
+        width: calc((100% - 60px));
+        /* margin: 0 60px; */
+    }
 }
 
 @media (max-width: 575px) {
     .banner{
         padding: 80px 40px;
     }
+
     .banner-text h3{
         font-size: 1.2rem;
         text-align: right;
     }
+
     .banner-text p{
         text-align: justify;
         font-size: 14px;
     }
+
     .online-payment .section-image{
         display: none;
     }
+
     .section-text{
         width: 80%;
         padding: 0 10px;
     }
+
     .section-text h3{
         font-size: 1.5rem;
     }
+
     .section-links{
         flex-direction: column;
     }
+
     .second-button{
         margin-top: 20px;
     }
+
     .items{
         padding: 50px 0;
         grid-template-columns: 1fr;
     }
+
     .items .item{
         padding: 18px 0;
     }
+
     .start-box{
         height: 180px;
     }
+
     .start-box h4{
         font-size: 1.2rem;
     }
+
     .start-box p{
         font-size: 1rem;
     }
+
     .support{
         width: calc(100% - 60px);
         padding: 0;
@@ -825,6 +890,15 @@ footer .footer-links{
 
     .support-number, .support-request{
         font-size: 0.95rem;
+    }
+
+    footer{
+       padding: 0 30px;
+    }
+
+    .footer-links a,
+    .footer-links p{
+        font-size: .9rem;
     }
 }    
 
